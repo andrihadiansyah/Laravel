@@ -1,0 +1,26 @@
+#windows
+cd C:\XAMPP/htdocs/
+
+#mac os/os x
+cd /Applications/XAMPP/xamppfiles/htdocs/
+
+#install
+composer create-project laravel/laravel alfinsprasetyo "5.7.*"
+
+
+#php artisan serve
+php artisan serve
+
+#2 XAMPP Virtual Host
+<VirtualHost laravel.local:80>
+    DocumentRoot "C:\xampp\htdocs\myProject\public"
+    ServerAdmin laravel.local
+    <Directory "C:\xampp\htdocs\myProject">
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+
+127.0.0.1 laravel.local
