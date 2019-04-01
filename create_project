@@ -9,6 +9,7 @@ composer create-project laravel/laravel alfinsprasetyo "5.7.*"
 
 
 #php artisan serve
+cd project_name
 php artisan serve
 
 #2 XAMPP Virtual Host
