@@ -1,0 +1,15 @@
+Add following code to AppServiceProvider.php (/app/Providers/AppServiceProvider.php)
+
+use Illuminate\Support\Facades\Schema; //NEW: Import Schema
+
+function boot()
+{
+    Schema::defaultStringLength(191); //NEW: Increase StringLength
+}
+
+in AppServiceProvider didn't work for me. What worked for was editing the database.php file in config folder. Just edit 
+'charset' => 'utf8mb4',
+'collation' => 'utf8mb4_unicode_ci',
+to 
+'charset' => 'utf8',
+'collation' => 'utf8_unicode_ci',
