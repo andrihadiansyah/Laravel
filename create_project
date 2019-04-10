@@ -5,7 +5,9 @@ cd C:\XAMPP/htdocs/
 cd /Applications/XAMPP/xamppfiles/htdocs/
 
 #install
-composer create-project laravel/laravel alfinsprasetyo "5.7.*" | composer create-project --prefer-dist laravel/laravel blog "5.7.*"
+composer create-project laravel/laravel alfinsprasetyo "5.7.*" |
+#create with your location like cd c:xampp\htdocs\
+composer create-project --prefer-dist laravel/laravel blog "5.7.*"
 
 
 #php artisan serve
